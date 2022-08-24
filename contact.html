@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chelsea Edmonds: Contact Page</title>
+        <meta content="This is Chelsea Edmonds's contact page." name="description">
+        <meta content="Margaux Scott" name="author">
+        <meta content="Chelsea Edmonds, Art, Contact" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link href="favicon.png" rel="shortcut icon">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="css/main.css">    
+        <link rel="stylesheet" href="css/slicknav.css">
+        <meta name="robots" content="INDEX, FOLLOW">
+    </head>
+<body>
+<!-- header start -->
+<div id="fixed_nav">
+    <header>
+    <img src="img/background/chelsea_logo.png" alt="Chelsea Edmonds's Name Logo">
+    </header>
+<!-- header end -->
+<!-- nav start -->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a href="about_me.html" title="About Me Page">About Me</a></li>
+            <li><a href="portfolio.html" title="Portfolio Page">Portfolio</a>
+                <ul>
+                    <li><a href="still_life.html" title="Still Life Gallery">Still Life</a></li>
+                    <li><a href="landscapes.html" title="Landscapes Gallery">Landscapes</a></li>
+                    <li><a href="portraits.html" title="Portraits Gallery">Portraits</a></li>
+                </ul>
+            <li><a href="contact.html" title="Contact Page" class="current_page">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- nav end -->
+<!-- main start -->
+<main>
+	<!-- Main Contact Start -->
+	<div id="contact_page">
+		<!-- Headings Start -->
+		<h1>Contact Me</h1>
+		<p>If you would like to contact me for a commission, have a question, or would just like to send me a comment. Fill in the form below to contact me, I would love to hear from you.</p>
+		<!-- Headings End -->
+			<!-- Form Links Start -->
+			<form action="https://api.web3forms.com/submit" method="POST" id="form">
+				<input type="hidden" name="access_key" value="68fd51dd-b6d9-4f1e-bdf2-262ab350adc6"/>
+				<input type="hidden" name="subject" value="New Message from Chelsea Edmonds's Contact Page" />
+				<input type="hidden" name="from_name" value="ChelseaJEdmonds.github.io">
+				<input type="hidden" name="redirect" value="https://ChelseaJEdmonds.github.io/message_success.html" />
+				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+			<!-- Form Links End -->
+			<!-- Form Input Start -->
+				<!-- Name Input -->
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Ex. Bob Smith" required>
+				<!-- Email Input -->
+				<label for="email" >Email Address</label>
+				<input type="email" name="email" id="email" placeholder="Ex. BSmith@gmail.com" required>					<!-- Message Type Input -->
+				<label for="message_type">Message Type</label>
+				<select id="message_type" name="Message Type">
+				<option value="Commission">Commission</option>
+				<option value="Comment">Comment</option>
+				<option value="Question">Question</option>
+				</select>
+				<!-- Message Input -->
+				<label for="message">Message</label>
+				<textarea rows="8" name="message" id="message" placeholder="Type Message Here" required></textarea>
+				<!-- Submit Button Start -->
+				<button type="submit">Send Message</button>
+				<!-- Submit Button End -->
+			<!-- Form Input End -->
+        	</form>
+		<!-- Main Contact End -->
+	</div>
+</main> 
+<!-- main end -->   
+<!-- footer start -->
+    <footer>
+    <button onclick="topFunction()" class="top" title="Back To Top">Back to Top</button>
+    </footer>
+<!-- footer end -->
+<!-- scripts start -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+    	<script src="js/main.js"></script>
+<!-- scripts end -->
+    </body>
+</html>

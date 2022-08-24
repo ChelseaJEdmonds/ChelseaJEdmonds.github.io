@@ -1,0 +1,1022 @@
+@charset “UTF-8”;
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Changa', sans-serif;
+    background-image: url(/img/background/ocean_background.png);
+    background-size: cover;
+    color: rgb(255,255,255);
+    background-attachment: fixed;
+}
+/* Styles For Header */
+header{
+    background-color: rgb(0,0,0);
+    padding: 0.5%;
+    text-align: center;
+}
+/* Styles For Fixed Nav */
+#fixed_nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 1;
+}
+/* Styles For Nav   */
+#nav_menu ul {
+	display: flex;
+    justify-content: center;
+    list-style: none;
+	padding: 0;
+    background-color: rgb(63,63,114);
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+}
+#nav_menu ul li:hover ul {
+	display: block;
+}
+#nav_menu ul li a {
+	display: block;
+	padding: 0.3em 1em;
+	color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgb(0,0,0);
+    font-size: 1.3em;
+}
+#nav_menu ul li a.current_page {
+	background-color: rgb(52, 107, 185);
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: rgb(52, 107, 185);
+}
+/* Styles For Homepage */
+#homepage_top{
+    display: flex;
+    justify-content: center;
+	margin: 275px 11.5% 0;
+}
+#homepage_top h1{
+    font-size: 3em;
+    padding: 3%;
+    text-align: center;
+    margin: 0 6% 0;
+    line-height: 1em;
+    font-weight: 400;
+    text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#homepage_top q{
+    font-style: italic;
+    font-size: 1.2em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	line-height: 0;
+}
+#homepage_top img{
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    max-width: 100%;
+	display: block;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+}
+#homepage_top div{
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    background-color: rgba(0,0,0,.35);
+    padding: 1%;
+	margin: auto 1.5%;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+#homepage_words{
+    margin-right: 30px;
+    padding: 0 2.8%;
+	text-align: center;
+}
+/* Homepage Bottom Images */
+#homepage_main{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,.35);
+    margin: 3% 11.5% 4%;
+    padding: 1% 0;
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+#homepage_main img{
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    max-width: 23%;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	margin: 0 0.8%;
+}
+/* Styles For Dialog Box */
+#dialog_greeting{
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-style: groove;
+}
+.ui-dialog-titlebar{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 5px 10px 1px rgb(55, 55, 55);
+}
+.ui-dialog-title{
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	font-size: 1.2em;
+}
+.ui-dialog{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+/* Styles For About Me Page */
+#about{
+	background-color: rgba(0,0,0,.35);
+	margin: 275px 11.5% 4%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+#about div{
+	padding: 0 30px;
+}
+#about div img{
+	max-width: 100%;
+}
+#about_picture{
+	float: right;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	margin: 0 0 1% 2%;
+}
+#about p{
+	font-size: 1.2em;
+    text-indent: 2.5em;
+    line-height: 1.5;
+	padding-bottom: 1em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#about_title{
+	margin-top: 0;
+	font-size: 3em;
+    font-weight: 400;
+    text-shadow: 1px 3px 3px rgb(0,0,0);
+	text-align: center;
+}
+#signature{
+	padding-bottom: 2.5%;
+	margin: auto;
+	display: block;
+}
+/* Styles For Individual Headings */
+.heading{
+	margin: 275px 35% 3%;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 400;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+	background-color: rgba(0,0,0,.35);
+	line-height: 1;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+/* Styles For Portfolio Page */
+#portfolio{
+	margin: 275px 3% 3%;
+	background-color: rgba(0,0,0,.35);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+#portfolio h1{
+	text-align: center;
+	font-size: 3em;
+	font-weight: 400;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	text-align: center;
+}
+#portfolio_selection{
+	display: flex;
+	justify-content: center;
+}
+#portfolio_selection img{
+	max-width: 100%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+}
+#portfolio_selection div{
+	padding: 0 0.5%;
+}
+#portfolio_selection h2{
+	text-align: center;
+	font-weight: 400;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	font-size: 1.6em;
+	line-height: 1;
+	padding: 2%
+}
+/* Styles For Gallery */
+.whole_gallery{
+	background-color: rgba(0,0,0,.35);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	margin: 275px 20% 0;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+.whole_gallery h1{
+	text-align: center;
+	font-size: 3em;
+	font-weight: 400;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	line-height: 0.5;
+	padding-top: 20px;
+}
+.gallery_container {
+	display: flex;
+}
+/* Main Slideshow */
+#big_gallery{
+	padding: 2%;
+	margin: auto;
+}
+.big_image_gallery img{
+	max-width: 100%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	display: block;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+}
+/* Side Gallery */
+#small_gallery{
+	margin: 10% 0;
+}
+.side_gallery {
+	cursor: grab;
+	padding: 10%;
+	margin-left: 10%;
+	width: 150px;
+}
+.side_gallery img{
+	border-style: groove;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	display: block;
+	width: 120px;
+}
+/* Portrait Orientation Side Gallery */
+.side_portrait_gallery{
+	margin: auto 0;
+	padding: 10% ;
+}
+/* Add a transparency to Side Gallery */
+.thumbnail {
+  opacity: 0.6;
+}
+.active, .thumbnail:hover {
+  opacity: 1;
+}
+/* Styles For Pop Up Image */
+/* Pop Up Image In Gallery */
+.allPopUpImages {
+  	border-radius: 20px
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+  	cursor: zoom-in;
+}
+.allPopUpImages:hover {
+	opacity: 0.7;
+}
+/* PopUp Box */
+.popup_box {
+  	display: none; 
+  	position: fixed;
+  	z-index: 1;
+ 	padding-top:  ;
+  	top: 0;
+  	width: 100%;
+  	height: 100%; 
+  	background-color: rgba(0,0,0,0.9);
+	overflow: auto;
+}
+/* PopUp Content (Image) */
+.popup_content {
+	margin: auto;
+  	display: block;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+/* Add Animation To Pop Up */
+.popup_content {  
+  	-webkit-animation-name: zoom;
+  	-webkit-animation-duration: 0.8s;
+  	animation-name: zoom;
+  	animation-duration: 0.8s;
+}
+@-webkit-keyframes zoom {
+  	from {-webkit-transform:scale(0)} 
+  	to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+	from {transform:scale(0)} 
+  	to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  	position: absolute;
+  	top: 15px;
+  	right: 35px;
+  	font-size: 5em;
+  	transition: 0.3s;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	box-shadow: 6px 9px 25px 1px rgb(55, 55, 55);
+	background-color: rgba(0,0,0,.35);
+	line-height: 0.7;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+.close:hover,
+.close:focus {
+  	color: rgb(108,160,234);
+  	text-decoration: none;
+  	cursor: zoom-out;
+}
+/* message Success Page */
+#message_success{
+	background-color: rgba(0,0,0,.35);
+	margin: 275px 20% 3%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+	padding: 12% 10.3%;
+}
+#message_success h1{
+	font-size: 4em;
+	font-weight: 100;
+	text-align: center;
+	line-height: 1;
+	padding-bottom: 3%;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#message_success p{
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+/* Contact Page */
+#contact_page{
+	margin: 275px 25% 10px;
+	background-color: rgba(0,0,0,.35);
+	border-radius: 20px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+	padding: 1% 5%;
+}
+#contact_page h1{
+	text-align: center;
+	font-weight: 300;
+	font-size: 3em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#contact_page p{
+	text-align: center;
+	font-size: 1.2em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	line-height: 1.4;
+	padding-bottom: 2%;
+}
+#contact_page input, #contact_page select, #contact_page textarea{
+	width: 100%;
+	border-radius: 5px;
+	border-color: rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	background-color: rgb(63,63,114);
+	font-size: 1.1em;
+	font-weight: 100;
+}
+#contact_page label{
+	font-size: 1.2em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#contact_page ::placeholder{
+	color: rgb(108,160,234);
+	font-weight: 100;
+}
+/* Button Styles */
+#contact_page button{
+	display: block;
+	margin: 10px auto;
+	font-size: 1.3em;
+	border-radius: 10px;
+	border-color: rgba(0,0,0,.1);
+	border-style: groove;
+	background-color: rgb(63,63,114);
+	color: rgb(255,255,255);
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	cursor: grab;
+	padding: 10px 20px;
+  	box-shadow: 0 6px rgb(79, 141, 181);
+}
+#contact_page button:hover {
+	background-color: rgb(45, 98, 142);
+}
+#contact_page button:active {
+  	background-color: rgb(45, 98, 142);
+  	box-shadow: 0 4px rgb(63, 114, 147);
+  	transform: translateY(6px);
+}
+/* PopUp Contact Form */
+/* Popup Message Content */
+#popup_message_content{
+	z-index: 50;
+	width: 450px;
+	position: fixed;
+	top: 190px;
+	right: 20px;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+/* Popup Message Top */
+#popup_message_top{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(52, 107, 185);
+	color: rgb(255,255,255);
+	padding: 3%;
+	height: 180px;
+	border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+}
+#popup_message_top h3{
+	font-size: 3em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	line-height: 1.5;
+}
+#popup_message_top p{
+	font-size: 1.2em;
+	line-height: 1.3;
+	text-align: center;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+/* Popup Message Inputs */
+#popup_message{
+	background-color: rgba(0,0,0,.9);
+	border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+}
+input, select, textarea{
+	width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-color: rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	background-color: rgb(63,63,114);
+	font-size: 1em;
+}
+label{
+	font-size: 1.2em;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+::placeholder{
+	color: rgb(108,160,234);
+}
+/* Popup Message Input */
+#popup_message_input{
+	padding: 5%;
+}
+#popup_message_input button{
+	display: block;
+	margin: auto;
+	padding: 1% 3%;
+	background-color: black;
+	box-shadow: none;
+	font-size: 1.2em;
+	color: rgb(255,255,255);
+	background-color: rgb(52, 107, 185);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	cursor: grab;
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+}
+#popup_message_input button:hover{
+	background-color: rgb(108,160,234);
+}
+#popup_message_input button:active{
+	transform: translateY(3px);
+}
+/* Popup Message Button */
+#popup_button{
+	position: fixed;
+	cursor: grab;
+	right: 15px;
+	bottom: 25px;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(63,63,114);
+	height: 50px;
+	width: 50px;
+	z-index: 40;
+	align-items: center;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-style: groove;
+	border-color: rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	box-shadow: 0 6px rgb(108,160,234);
+}
+#popup_button:hover{
+	background-color: rgb(52, 107, 185);
+}
+#popup_button:focus{
+	transition-duration: 900 ease;
+}
+#popup_button:active {
+  	box-shadow: 0 4px rgb(108,160,234);
+  	transform: translateY(6px);
+}
+/* Styles For 404 Page */
+#error{
+    text-align: center;
+    position: relative;
+	top: 13.5em;
+}
+#error h1{
+    font-size: 10em;
+    line-height: 0.5em;
+	margin-top: 140px
+}
+#error p{
+    font-size: 2.3em;
+}
+#error a{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    left: 35.1em;
+    top: 14.3em;
+}
+#error a:hover{
+    color: rgb(108,160,234);
+    background-color: rgb(63,63,114);
+    padding: 0 0.5%;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+#error_ocean img{
+    position: relative;
+    border-style: none;
+    border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    z-index: -2;
+	max-width: 100%;
+	bottom: 2em;
+}
+
+/* Styles For Footer */
+footer{
+    text-align: center;
+    margin-top: 4%;
+    background-color: rgb(0,0,0);
+	padding: 10px 0;
+}
+footer button{
+	color: rgb(255,255,255);
+	background-color: rgb(52, 107, 185);
+	text-shadow: 1px 3px 3px rgb(0,0,0);
+	padding: 8px;
+  	border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+  	font-size: 1.4em;
+	line-height: 0.6;
+}
+footer button:hover{
+	background-color: rgb(108,160,234);
+}
+footer button:active{
+	box-shadow: none;
+	transform: translateY(1px);
+}
+
+/* Hide Desktop Items */
+#mobile_menu {
+	display: none;
+}
+.mobile_gallery{
+	display: none;
+}
+#mobile h1{
+	display: none;
+}
+
+
+/* TABLET VIEW */
+@media only screen and (max-width: 830px) { 
+/* Styles for TABLET/Slicknav */
+    #nav_menu {
+		display: none;
+	}
+    #mobile_menu {
+        display: block;
+	}
+    #mobile_menu ul li a:hover{
+	background-color: rgb(52, 107, 185);
+	}
+	#mobile_menu a.current_page {
+		background-color: rgb(52, 107, 185);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+	}
+	header img{
+		max-width: 300px;
+	}
+    /* Styles For Homepage */
+    #homepage_top{
+          margin: 250px 3% 5%;
+          text-align: center;
+    }
+    #homepage_top h1{
+        font-size: 2.5em;
+		line-height: 1;
+    }
+	#homepage_top div{
+		margin: auto 1.5%;
+	}
+    #homepage_top q{
+        font-size: 1em;
+		line-height: 0.5;
+    }
+    /* Styles for Homepage Main  */
+    #homepage_main{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 2% 3% 7%;
+		padding: 0;
+    }
+    #homepage_main img{
+        max-width: 46%;
+		margin: 1.5%;
+		width: 100%;
+    }
+	/* Styles About Me Page*/
+	#about{
+		margin: 250px 3% 7%;
+	}
+	#about div{
+		padding: 0 3%;
+	}
+	#about_title{
+		font-size: 2.5em;
+	}
+	#about p{
+		font-size: 1.1em;
+		line-height: 1.2;
+	}
+	#about_picture{
+		width: 55%;
+	}
+	#signature{
+		width: 40%;
+	}
+	/* Styles Portfolio Selection Page*/
+	#portfolio{
+		margin: 250px 3% 7%;
+	}
+	#portfolio_selection{
+		display: block;
+	}
+	#portfolio_selection img{
+		height: auto;
+		width: 100%;
+	}
+	#portfolio_selection div{
+		padding: 0 3%;
+	}
+	#portfolio_selection h2{
+		font-size: 1.5em;
+		padding-bottom: 4%;
+	}
+	/* Styles for Tablet Gallery Pages */
+	/* styles for Gallery */
+	.whole_gallery{
+		margin: 250px 3% 7%;
+	}
+	.whole_gallery h1{
+		font-size: 2.5em;
+	}
+	.big_image_gallery img{
+		max-height: 420px;
+	}
+	/* Side Gallery */
+	.side_gallery{
+		width: 100px;
+	}
+	.side_gallery img{
+		max-width: 100%;
+	}
+	.side_portrait_gallery{
+		width: 180px;
+		margin-left: 2%;
+	}
+	/* Contact Page */
+	#contact_page{
+		margin: 250px 3% 7%;
+	}
+	#contact_page h1{
+		font-size: 2.5em;
+	}
+	#contact_page p{
+		font-size: 1.1em;
+	}
+	#contact_page label{
+		font-size: 1.1em;
+	}
+	#contact_page input, #contact_page select, #contact_page textarea{
+		font-size: 1em;
+	}
+	/* Footer Button */
+	footer button{
+		font-size: 1.2em;
+	}
+	footer{
+		margin: 0;
+	}
+	/* PopUp Contact Form */
+	/* Popup Message Top */
+	#popup_message_top h3{
+	font-size: 2.5em;
+	}
+	#popup_message_top p{
+	font-size: 1em;
+	}
+	/* Popup Message Inputs */
+	label{
+		font-size: 1.15em;
+	}
+	::placeholder{
+		font-size: 0.9em;
+	}
+	/* Message Success Page */
+	#message_success{
+		margin: 250px 3% 7%;
+		padding: 27% 0;
+	}
+	/* Message Success Page */
+	#message_success h1{
+		font-size: 2.5em;
+	}
+	#message_success p{
+		font-size: 1em;
+	}
+    /* Styles for 404 Page */
+	#error{
+		top: 11em;
+	}
+	#error h1{
+        font-size: 8em;
+    }
+    #error p{
+        font-size: 2em;
+    }
+    #error a{
+        font-size: 1.4em;
+    }
+	#error_ocean img{
+		max-width: 400px;
+		margin-bottom: 20px;
+		bottom: 2.8em;
+	}
+}
+/* MOBILE VIEW  */
+@media only screen and (max-width: 500px) {
+/* Header Image  */	
+	header img{
+		max-width: 200px
+	}
+/* Styles Homepage Top  */
+    #homepage_top{
+        display: block;
+        text-align: center;
+        margin: 200px 4% 4%;
+    }
+    #homepage_words{
+        margin: auto;
+    }
+    #homepage_top h1{
+        font-size: 2.2em;
+        margin: 0;
+        padding: 0;
+    }
+    #homepage_top q{
+        font-size: 0.9em;   
+    }
+    #homepage_top div{
+        margin-top: 7%;
+    }
+    /* Styles Homepage Main  */
+    #homepage_main{
+        margin: 7% 5% 12%;
+    }
+    #homepage_main div{
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    #homepage_main img{
+        max-width: 48%;
+		margin: 1% auto;
+    }
+	/* Styles About Me Page*/
+	#about{
+		margin: 200px 5% 12%;
+	}
+	#about_title{
+		font-size: 2em;
+	}
+	#about p{
+		line-height: 1.1;
+		font-size: 0.9em;
+	}
+	#signature{
+		width: 55%;
+	}
+	/* Styles Portfolio Selection */
+	#portfolio{
+		margin: 200px 5% 12%;
+	}
+	#portfolio h1{
+		font-size: 2em;
+	}
+	#portfolio_selection h2{
+		font-size: 1.2em
+	}
+	/* Styles Mobile Gallery */
+	.whole_gallery{
+		display: none;
+	}
+	#mobile h1{
+		display: block;
+		font-size: 2em;
+		text-align: center;
+		font-weight: 400;
+		text-shadow: 1px 3px 3px rgb(0,0,0);
+	}
+	.mobile_gallery{
+		display: block;
+		margin: auto 3% 3%;
+	}
+	#mobile{
+		background-color: rgba(0,0,0,.35);
+		border-radius: 20px;
+		border-color: rgba(0,0,0,.1);
+		border-style: groove;
+		box-shadow: 6px 9px 15px 5px rgb(55, 55, 55);
+		margin: 200px 5% 12%;
+	}
+	.mobile_gallery img{
+		max-width: 100%;
+		border-radius: 20px;
+		border-color: rgba(0,0,0,.1);
+		border-style: groove;
+		display: list-item;
+		margin-top: 3%;
+	}
+	/* Contact Page */
+	#contact_page{
+		margin: 200px 4% 12%;
+	}
+	#contact_page h1{
+		font-size: 2em;
+	}
+	#contact_page p{
+		font-size: 1em;
+	}
+	#contact_page label{
+		font-size: 1em;
+	}
+	#contact_page input, #contact_page select, #contact_page textarea{
+		font-size: 0.9em;
+	}
+	/* Message Success Page */
+	#message_success{
+		margin: 200px 5% 12%;
+		padding: 50% 2%;
+	}
+	#message_success h1{
+		font-size: 2em;
+	}
+	#message_success p{
+		font-size: 0.9em;
+	}
+	/* PopUp Contact Form */
+	/* Popup Message Top */
+	#popup_message_top{
+		height: 150px;
+	}
+	#popup_message_top h3{
+		font-size: 2em;
+		line-height: 1.7;
+	}
+	#popup_message_top p{
+	font-size: 0.9em
+	}
+	/* Popup Message Inputs */
+	label{
+		font-size: 1em;
+	}
+	/* Footer Button */
+	footer button{
+		font-size: 1.2em;
+	}
+	/* 404 Page */
+	#error{
+		top: 8em;
+	}
+	#error h1{
+        font-size: 7em;
+    }
+    #error p{
+        font-size: 1.5em;
+    }
+    #error a{
+        font-size: 1em;
+    }
+	#error_ocean img{
+		max-width: 350px;
+		bottom: 3.3em;
+	}
+}
+	
+	

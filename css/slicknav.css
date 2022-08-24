@@ -1,0 +1,97 @@
+/* IE6/7 support */
+.slicknav_menu {
+*zoom: 1
+}
+/* Main Designs for the TABLET/MOBILE/Slicknav */
+/* Styles for Whole Menu */
+.slicknav_menu {
+	font-size: 1.5em;
+	background-color: rgb(63,63,114);
+}
+.slicknav_nav {
+	clear: both;
+}
+/* Styles For Menu Button */
+.slicknav_btn {
+	margin: 0.1em;
+    cursor: grab;
+    float: right;
+    padding: 0.6em 2.5%;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    line-height: 1em;
+}
+.slicknav_btn:hover{
+	background-color: rgb(52, 107, 185);
+	
+}
+/* Styles For the Word Menu */
+.slicknav_menutxt {
+	color: rgb(255,255,255);
+	text-shadow: 5px 5px 5px rgb(0,0,0);
+    float: left;
+    line-height: 1em;
+}
+/* Styles for Lines Next to Menu */
+.slicknav_icon-bar {
+	background-color: rgb(108,160,234);
+    display: block;
+    width: 1.3em;
+	height: 0.13em;
+	-webkit-box-shadow: 2px 0.5px 3px rgb(0,0,0);
+	-moz-box-shadow: 2px 0.5px 3px rgb(0,0,0);
+	box-shadow: 2px 0.5px 3px rgb(0,0,0);
+    margin-top: 0.17em
+}
+.slicknav_icon {
+	float: right;
+	margin-left: 0.5em;
+}
+/* Styles for Extra Space Above First Link */
+.slicknav_nav ul {
+	overflow: hidden;
+}
+.slicknav_nav ul {
+	padding: 0;
+    margin: 0 10%;
+}
+/* Styles for Links */
+.slicknav_nav a {
+	padding: 0.5% 5%;
+	margin: 2% 50% 2% 0;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgb(0,0,0);
+    display: block;
+}
+/* Styles for Extra Drop Down Menu */
+.slicknav_item a {
+	margin: 0;
+}
+/* Styles to Position Arrow Next to Extra Drop Menu */
+.slicknav_nav .slicknav_item a {
+	display: inline;
+}
+.slicknav_arrow {
+	margin-left: 1%;
+}
+.slicknav_nav a:hover {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;   
+}
+/* Styles to Show Background When Menu is Clicked */
+.slicknav_menu:before, .slicknav_menu:after {
+	content: " ";
+	display:table;
+    clear: both;
+}
+/* Mobile Menu Styles */
+@media only screen and (max-width: 500px){
+	.slicknav_menu {
+	font-size: 1.3em;
+	}
+}
+	
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chelsea Edmonds: Portfolio</title>
+        <meta content="This page provides navigation to Chelsea Edmonds's gallery pages." name="description">
+        <meta content="Margaux Scott" name="author">
+        <meta content="Chelsea Edmonds, Gallery, Portfolio" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link href="favicon.png" rel="shortcut icon">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="css/main.css">    
+        <link rel="stylesheet" href="css/slicknav.css">
+        <meta name="robots" content="INDEX, FOLLOW">
+    </head>
+<body>
+<!-- Header Start -->
+<div id="fixed_nav">
+    <header>
+    	<img src="img/background/chelsea_logo.png" alt="Chelsea Edmonds's Name Logo">
+    </header>
+<!-- Header End -->
+<!-- Nav Start -->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a href="about_me.html" title="About Me Page">About Me</a></li>
+            <li><a href="portfolio.html" title="Portfolio Page" class="current_page">Portfolio</a>
+                <ul>
+                    <li><a href="still_life.html" title="Still Life Gallery">Still Life</a></li>
+                    <li><a href="landscapes.html" title="Landscapes Gallery">Landscapes</a></li>
+                    <li><a href="portraits.html" title="Portraits Gallery">Portraits</a></li>
+                </ul>
+			<li><a href="contact.html" title="Contact Page">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- Nav End -->
+<!-- Main Start -->
+<main>
+	<!-- Whole Portfolio Start -->
+	<div id="portfolio">
+		<h1>Portfolio</h1>
+		<!-- Portfolio Selection Start -->
+		<div id="portfolio_selection">
+			<div>
+				<a href="still_life.html" title="Still Life Artwork"><img src="img/portfolio/chelsea_edmonds_baseball_hats.jpg" alt="Painting of Red Sox and Yankee Baseball Hats"></a>
+				<h2>Still Life Artwork</h2>
+			</div>
+			<div>
+				<a href="landscapes.html" title="Landscape Artwork"><img src="img/portfolio/chelsea_edmonds_lighthouse_art.jpg" alt="Painting of a Lighthouse"></a>
+				<h2>Landscape Artwork</h2>
+			</div>
+			<div>
+				<a href="portraits.html" title="Portrait Artwork"><img src="img/portfolio/chelsea_edmonds_woman_plaid.jpg" alt="Painting of a Woman in Plaid"></a>
+				<h2>Portrait Artwork</h2>
+			</div>
+		</div>
+		<!-- Portfolio Selection End -->
+	</div>
+	<!-- Whole Portfolio End -->
+	<!-- Popup Message Form Start -->	
+	<div x-data="{ open: false }"> 
+		<!-- Popup Message Contant start -->	
+		<div id="popup_message_content" x-show="open" @click.away="open = false">
+			<!-- Top of Popup Message Start -->
+			<div id="popup_message_top">
+				<h3>Contact Me</h3>
+				<p>If you would like to contact me for a commission, have a question, or would just like to send me a comment. Fill in the form below to contact me, I would love to hear from you.</p>
+			</div>
+			<!-- Top of Popup Message End -->
+			<!-- Popup Message Main Start -->
+			<div id="popup_message"> 
+				<form action="https://api.web3forms.com/submit" method="POST" id="form"> 
+					<input type="hidden" name="access_key" value="68fd51dd-b6d9-4f1e-bdf2-262ab350adc6"/>
+					<input type="hidden" name="subject" value="New Message from Chelsea Edmonds's Contact Page" />
+					<input type="hidden" name="from_name" value="ChelseaJEdmonds.github.io">
+					<input type="hidden" name="redirect" value="https://ChelseaJEdmonds.github.io/message_success.html" />
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+					<!-- Popup Message Input Start-->
+					<div id="popup_message_input">
+						<!-- Name Input -->
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="Ex. Bob Smith" required>
+						<!-- Email Input -->
+						<label for="email" >Email Address</label>
+						<input type="email" name="email" id="email" placeholder="Ex. BSmith@gmail.com" required>
+						<!-- Message Type Input -->
+						<label for="message_type">Message Type</label>
+						<select id="message_type" name="Message Type">
+						<option value="Commission">Commission</option>
+						<option value="Comment">Comment</option>
+						<option value="Question">Question</option>
+						</select>
+						<!-- Message Input -->
+						<label for="message">Message</label>
+						<textarea rows="8" name="message" id="message" placeholder="Type Message Here" required></textarea>
+						<!-- Submit Button -->
+						<button type="submit">Send Message</button>
+					<!-- Popup Message Input End-->
+					</div>
+				</form>
+			</div>
+			<!-- Popup Message Main End -->
+		</div>
+		<!-- Popup Message Content End -->
+		<!-- Popup Message Main Button Start -->
+     	<button id="popup_button" @click="open = !open">
+			<!-- Image when Popup Message is Closed -->
+			<svg  x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+			</svg>
+			<!-- Image when Popup Message is Open -->
+			<svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+			</svg>									 
+		</button>
+		<!-- Popup Message Main Button End -->
+  	</div>
+	<!-- Popup Message Form End -->	
+</main> 
+<!-- Main End -->   
+	<!-- Footer Start -->
+    <footer>
+    	<button onclick="topFunction()" class="top" title="Back To Top">Back to Top</button>
+    </footer>
+	<!-- Footer End -->
+	<!-- Scripts Start -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script src="//unpkg.com/alpinejs" defer></script>	
+	<script src="js/main.js"></script>
+	<!-- Scripts End -->
+    </body>
+</html>
