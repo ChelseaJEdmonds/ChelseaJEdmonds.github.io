@@ -986,8 +986,9 @@ footer button:active{
 	/* Popup Message Top */
 	#popup_message_content{
 		left: 0;
-		display: block;
-		margin: auto
+		overflow: visible;
+		top: 0;
+		width: 100%
 	}
 	#popup_message_top{
 		height: 120px;
