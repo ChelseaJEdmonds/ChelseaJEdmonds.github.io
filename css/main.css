@@ -706,7 +706,7 @@ footer button:active{
           text-align: center;
     }
     #homepage_top h1{
-        font-size: 2.5em;
+        font-size: 2.3em;
 		line-height: 1;
     }
 	#homepage_top div{
@@ -737,10 +737,10 @@ footer button:active{
 		padding: 0 3%;
 	}
 	#about_title{
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 	#about p{
-		font-size: 1.1em;
+		font-size: 1em;
 		line-height: 1.2;
 	}
 	#about_picture{
@@ -764,7 +764,7 @@ footer button:active{
 		padding: 0 3%;
 	}
 	#portfolio_selection h2{
-		font-size: 1.5em;
+		font-size: 1.3em;
 		padding-bottom: 4%;
 	}
 	/* Styles for Tablet Gallery Pages */
@@ -773,7 +773,7 @@ footer button:active{
 		margin: 250px 3% 7%;
 	}
 	.whole_gallery h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 	.big_image_gallery img{
 		max-height: 420px;
@@ -794,20 +794,20 @@ footer button:active{
 		margin: 250px 3% 7%;
 	}
 	#contact_page h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 	#contact_page p{
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 	#contact_page label{
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 	#contact_page input, #contact_page select, #contact_page textarea{
 		font-size: 1em;
 	}
 	/* Footer Button */
 	footer button{
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 	footer{
 		margin: 0;
@@ -815,17 +815,17 @@ footer button:active{
 	/* PopUp Contact Form */
 	/* Popup Message Top */
 	#popup_message_top h3{
-	font-size: 2.5em;
+	font-size: 2.3em;
 	}
 	#popup_message_top p{
 	font-size: 1em;
 	}
 	/* Popup Message Inputs */
 	label{
-		font-size: 1.15em;
+		font-size: 1.1em;
 	}
 	::placeholder{
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 	/* Message Success Page */
 	#message_success{
@@ -834,7 +834,7 @@ footer button:active{
 	}
 	/* Message Success Page */
 	#message_success h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 	#message_success p{
 		font-size: 1em;
@@ -844,10 +844,10 @@ footer button:active{
 		top: 11em;
 	}
 	#error h1{
-        font-size: 8em;
+        font-size: 7em;
     }
     #error p{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #error a{
         font-size: 1.4em;
@@ -985,18 +985,19 @@ footer button:active{
 	/* PopUp Contact Form */
 	/* Popup Message Top */
 	#popup_message_content{
+		left: 0;
 		display: block;
-		justify-content: center;
+		margin: auto
 	}
 	#popup_message_top{
 		height: 120px;
 	}
 	#popup_message_top h3{
-		font-size: 1.6em;
+		font-size: 2em;
 		line-height: 1;
 	}
 	#popup_message_top p{
-	font-size: 0.8em
+		font-size: 0.9em;
 	}
 	/* Popup Message Inputs */
 	label{
