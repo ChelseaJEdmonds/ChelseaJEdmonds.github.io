@@ -1,7 +1,6 @@
 // Dialog Box
 $( function() {
     $( "#dialog_greeting" ).dialog();
-	$('#dialog_greeting').draggable(); 
   } );
 //Mobile Nav Menu
  $(document).ready(function(){
