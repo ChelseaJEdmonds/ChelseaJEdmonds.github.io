@@ -986,9 +986,9 @@ footer button:active{
 	/* Popup Message Top */
 	#popup_message_content{
 		left: 0;
-		top: 0;
 		width: 100%;
-		overflow: scroll;
+		position: absolute;
+		top: 0;
 	}
 	#popup_message_top{
 		height: 120px;
@@ -1000,7 +1000,7 @@ footer button:active{
 	#popup_message_top p{
 		font-size: 0.9em;
 	}
-	textarea{
+	textarea:focus{
 	 	overflow: scroll;
 	}
 	/* Popup Message Inputs */
