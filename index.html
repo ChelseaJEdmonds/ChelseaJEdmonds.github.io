@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Chelsea Edmonds: About Me</title>
-        <meta content="This is the biography page of Chelsea Edmonds." name="description">
+        <title>Chelsea Edmonds</title>
+        <meta content="This is the introduction to Chelsea Edmonds's art portfolio page." name="description">
         <meta content="Margaux Scott" name="author">
-        <meta content="Chelsea Edmonds, Art, Biography" name="keywords">
+        <meta content="Chelsea Edmonds, Art, Painting" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1">    
         <link href="favicon.png" rel="shortcut icon">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="css/main.css">    
         <link rel="stylesheet" href="css/slicknav.css">
@@ -16,7 +17,7 @@
 <body>
 <!-- Header Start -->
 <div id="fixed_nav">
-	<header>
+    <header>
     	<img src="img/background/chelsea_logo.png" alt="Chelsea Edmonds's Name Logo">
     </header>
 <!-- Header End -->
@@ -24,8 +25,8 @@
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="index.html" title="Homepage">Home</a></li>
-            <li><a href="about_me.html" title="About Me Page" class="current_page">About Me</a></li>
+            <li><a href="index.html" title="Homepage" class="current_page">Home</a></li>
+            <li><a href="about_me.html" title="About Me Page">About Me</a></li>
             <li><a href="portfolio.html" title="Portfolio Page">Portfolio</a>
                 <ul>
                     <li><a href="still_life.html" title="Still Life Gallery">Still Life</a></li>
@@ -37,31 +38,34 @@
     </nav>
 </div>
 <!-- Nav End -->
+<!-- Dialog Start  -->
+<div id="dialog_greeting" title="Welcome">
+ 	<p>Hello I am Chelsea Edmonds, and welcome to my art portfolio.  Take a look around, I have prints for purchase and I am open to commissions.</p>
+</div>
+<!-- Dialog End  -->
 <!-- Main Start -->
 <main>
-	<!-- About Start -->
-    <div id="about">
-		<div>
-			<h1 id="about_title">A Little About Me</h1>
-            <img src="img/about_me/chelsea_edmonds_profile.jpg" alt="Profile Image of Chelsea Edmonds" id="about_picture">
-        </div>
-		<!-- About Bio Start -->
-        <div id="about_bio">
-            <p>Born in New York, out east on Long Island in the 50’s, I had nothing but forest from my back door, as far as the eye could see. This was our playground and we spent hours exploring and playing Tarzan. After school and on the weekends, it was my dog and I seeking out small animals, wild blueberries, and whatever we could find. This is where my love for nature comes from.
-            </p>
-            <p>From as far back as I can remember I spent time drawing with paper and pencil at home. This I believe is where my ability to see and translate to paper comes from. In Elementary school and throughout Junior High school my teachers had me decorate their bulletin boards and classroom walls. When my drawings were hung somewhere in the building, I never got them back, but that was ok with me, because I was proud to contribute to the school. An Art teacher that I had in the 5th grade cried when she saw a drawing that I did of President Lincoln. She said it was like I knew the man.
-            </p>
-            <p>Finally, as a Senior in High school with an open period that needed to be filled, I took an art class which I really enjoyed doing. That Spring, before graduation, I was called down to the auditorium for Senior Awards day. I had no idea why but there was a seat on the stage for me with other students. To my surprise, my name was called, and I was given the Senior award for Art.
-            </p>
-            <p>As time went on, I got away from art, and was more focused on my career in the chemical field.  But then, a few years ago I decided to pick up the paint brush once again.  Now I wonder why I ever stopped.  Painting is my passion, and I am happy to show my work off to the world.  
-            </p>
-			<p>If you are interested in a print, feel free to contact me. I also take commissions upon request, with pricing based on the work.  Thank you for taking the time to visit my site.
-			</p>
-			<img src="img/about_me/chelsea_edmonds_signature.png" alt="Chelsea Edmonds's Signature" id="signature">
-     	</div>
-		<!-- About Bio End -->
+	<!-- Hompage Top Start -->
+	<div id="homepage_top">
+		<!-- Hompage Words Start -->
+    	<div id="homepage_words">
+    		<h1>Welcome to My Portfolio</h1>
+       		<p>I now consider myself an artist. Before recently I just played at being an artist."</p>
+       	</div>
+		<!-- Hompage Words End -->
+       	<div>
+        	<img src="img/homepage/chelsea_edmonds_water_rafting.jpg" alt="Image of Chelsea Edmonds Water Rafting">
+    	</div>
+	</div>
+	<!-- Hompage Top End -->
+	<!-- Hompage Main Start -->
+    <div id="homepage_main">
+        <img src="img/homepage/chelsea_edmonds_boating.jpg" alt="Image of Chelsea Edmonds Boating">
+        <img src="img/homepage/chelsea_edmonds_easel.jpg" alt="Image of Chelsea Edmonds's Easel">
+        <img src="img/homepage/chelsea_edmonds_fishing.jpg" alt="Image of Chelsea Edmonds Fishing">
+        <img src="img/homepage/chelsea_edmonds_hiking.jpg" alt="Image of Chelsea Edmonds Hiking">
     </div>
-	<!-- About End -->
+	<!-- Hompage Main End -->
 	<!-- Popup Message Form Start -->	
 	<div x-data="{ open: false }"> 
 		<!-- Popup Message Contant Start -->	
@@ -119,18 +123,19 @@
 		<!-- Popup Message Main Button End -->
   	</div>
 	<!-- Popup Message Form End -->	
-</main>
-<!-- Main End -->   
-	<!-- Footer Start -->
+</main> 
+<!-- Main end -->   
+	<!-- Footer start -->
     <footer>
-    	<button onclick="topFunction()" class="top" title="Back To Top">Back to Top</button>
+		<button onclick="topFunction()" class="top" title="Back To Top">Back to Top</button>
     </footer>
 	<!-- Footer End -->
 	<!-- Scripts Start -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
-	<script src="//unpkg.com/alpinejs" defer></script>	
-	<script src="js/main.js"></script>
+  	<script src="//unpkg.com/alpinejs" defer></script>	
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
 	<!-- Scripts End -->
     </body>
 </html>
