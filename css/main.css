@@ -857,6 +857,13 @@ footer button:active{
 		margin-bottom: 20px;
 		bottom: 2.8em;
 	}
+	/* Dialog Box  */
+	#dialog_greeting{
+		position: absolute;
+	}
+	#dialog_greeting p{
+		cursor: move;
+	}
 }
 /* MOBILE VIEW  */
 @media only screen and (max-width: 500px) {
