@@ -152,16 +152,14 @@
 		</div>
 		<!-- Popup Message Content End -->
 		<!-- Popup Message Main Button Start -->
+		<div>
      	<button id="popup_button" @click="open = !open">
-			<!-- Image when Popup Message is closed -->
-			<svg  x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-			<path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-			</svg>
+			<!-- Image when Popup Message is Closed -->
+			<img src="img/background/mail_icon.png" alt="Mail Icon" x-show="!open">
 			<!-- Image when Popup Message is Open -->
-			<svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-			</svg>									 
+			<img src="img/background/close_icon.png" alt="Close Icon" x-show="open">
 		</button>
+		</div>
 		<!-- Popup Message Main Button End -->
   	</div>
 	<!-- Popup Message Form End -->	
