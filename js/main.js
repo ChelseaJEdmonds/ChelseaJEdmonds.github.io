@@ -3,25 +3,6 @@ $( function() {
     $( "#dialog_greeting" ).dialog();
   } );
 
-$(window).resize(function() {
-    var $htmlOrBody = $('html, body'), // scrollTop works on <body> for some browsers, <html> for others
-    scrollTopPadding = 8;
-    // get input tag's offset top position
-    var textareaTop = $(this).offset().top;
-    // scroll to the textarea
-    $htmlOrBody.scrollTop(textareaTop - scrollTopPadding);
-
-    // OR  To add animation for smooth scrolling, use this. 
-    //$htmlOrBody.animate({ scrollTop: textareaTop - scrollTopPadding }, 200);
-});
-
-$('.click').click(function(){
-$('#dialog_greeting').show();
-$('#dialog_greeting').draggable();   
-});
-
-
-
 //Mobile Nav Menu
  $(document).ready(function(){
  	$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
