@@ -69,11 +69,11 @@ header{
     font-weight: 400;
     text-shadow: 1px 3px 3px rgb(0,0,0);
 }
-#homepage_top q{
+#homepage_top p{
     font-style: italic;
     font-size: 1.1em;
 	text-shadow: 1px 3px 3px rgb(0,0,0);
-	line-height: 0;
+	line-height: 1.5;
 }
 #homepage_top img{
     border-radius: 20px;
@@ -255,7 +255,7 @@ header{
 	text-shadow: 1px 3px 3px rgb(0,0,0);
 	font-size: 1.5em;
 	line-height: 1;
-	padding: 2%
+	padding: 2%;
 }
 /* Styles For Gallery */
 .whole_gallery{
@@ -712,9 +712,9 @@ footer button:active{
 	#homepage_top div{
 		margin: auto 1.5%;
 	}
-    #homepage_top q{
+    #homepage_top p{
         font-size: 1em;
-		line-height: 0.5;
+	
     }
     /* Styles for Homepage Main  */
     #homepage_main{
@@ -878,8 +878,9 @@ footer button:active{
         margin: 0;
         padding: 0;
     }
-    #homepage_top q{
+    #homepage_top p{
         font-size: 0.9em;   
+		padding-top: 2%;
     }
     #homepage_top div{
         margin-top: 7%;
@@ -965,8 +966,8 @@ footer button:active{
 	#contact_page label{
 		font-size: 1em;
 	}
-	#contact_page input, #contact_page select, #contact_page textarea{
-		font-size: 1em;
+	#contact_page input, #contact_page select, #contact_page textarea, #contact_page ::placeholder{
+		font-weight: 700;
 	}
 	#contact_page button{
 		font-size: 1em;
@@ -1000,12 +1001,12 @@ footer button:active{
 	#popup_message_top p{
 		font-size: 0.9em;
 	}
-	textarea:focus{
-	 	overflow: scroll;
-	}
 	/* Popup Message Inputs */
 	label{
 		font-size: 1em;
+	}
+	textarea:focus{
+	 	overflow: scroll;
 	}
 	/* Footer Button */
 	footer button{
