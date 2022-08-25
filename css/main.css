@@ -471,6 +471,8 @@ header{
 	cursor: grab;
 	padding: 0.5% 3%;
   	box-shadow: 0 6px rgb(79, 141, 181);
+	-webkit-box-shadow: 0 6px rgb(79, 141, 181);
+	-moz-box-shadow: 0 6px rgb(79, 141, 181);
 }
 #contact_page button:hover {
 	background-color: rgb(45, 98, 142);
@@ -478,6 +480,8 @@ header{
 #contact_page button:active {
   	background-color: rgb(45, 98, 142);
   	box-shadow: 0 4px rgb(63, 114, 147);
+	-webkit-box-shadow: 0 6px rgb(63, 114, 147);
+	-moz-box-shadow: 0 6px rgb(63, 114, 147);
   	transform: translateY(6px);
 }
 /* PopUp Contact Form */
@@ -560,6 +564,8 @@ label{
 	-moz-border-radius: 10px;
 	border-style: groove;
 	box-shadow: 0 6px rgb(79, 141, 181);
+	-webkit-box-shadow: 0 6px rgb(79, 141, 181);
+	-moz-box-shadow: 0 6px rgb(79, 141, 181);
 	cursor: grab;
 	text-shadow: 1px 3px 3px rgb(0,0,0);
 }
@@ -569,6 +575,9 @@ label{
 #popup_message_input button:active{
 	background-color: rgb(45, 98, 142);
   	box-shadow: 0 4px rgb(63, 114, 147);
+	-webkit-box-shadow: 0 6px rgb(63, 114, 147);
+	-moz-box-shadow: 0 6px rgb(63, 114, 147);
+	
 	transform: translateY(3px);
 }
 /* Popup Message Button */
@@ -663,6 +672,8 @@ footer button{
   	font-size: 1.4em;
 	line-height: 0.6;
 	box-shadow: 0 6px rgb(79, 141, 181);
+	-webkit-box-shadow: 0 6px rgb(79, 141, 181);
+	-moz-box-shadow: 0 6px rgb(79, 141, 181);
 	cursor: grab;
 }
 footer button:hover{
@@ -671,6 +682,8 @@ footer button:hover{
 footer button:active{
 	background-color: rgb(45, 98, 142);
   	box-shadow: 0 4px rgb(63, 114, 147);
+	-webkit-box-shadow: 0 6px rgb(63, 114, 147);
+	-moz-box-shadow: 0 6px rgb(63, 114, 147);
   	transform: translateY(2px);
 }
 
@@ -1017,7 +1030,7 @@ footer button:active{
 	}
 	/* Footer Button */
 	footer button{
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 	/* 404 Page */
 	#error{
