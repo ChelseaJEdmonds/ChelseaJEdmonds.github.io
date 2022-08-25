@@ -2,6 +2,17 @@
 $( function() {
     $( "#dialog_greeting" ).dialog();
   } );
+
+var $htmlOrBody = $('html, body'), // scrollTop works on <body> for some browsers, <html> for others
+    scrollTopPadding = 8;
+
+$('textarea').focus(function() {
+    // get textarea's offset top position
+    var textareaTop = $(this).offset().top;
+    // scroll to the textarea
+    $htmlOrBody.scrollTop(textareaTop - scrollTopPadding);
+});
+
 //Mobile Nav Menu
  $(document).ready(function(){
  	$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
