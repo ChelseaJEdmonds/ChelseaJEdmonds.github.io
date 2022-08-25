@@ -15,6 +15,13 @@ $(window).resize(function() {
     //$htmlOrBody.animate({ scrollTop: textareaTop - scrollTopPadding }, 200);
 });
 
+$('.click').click(function(){
+$('#dialog_greeting').show();
+$('#dialog_greeting').draggable();   
+});
+
+
+
 //Mobile Nav Menu
  $(document).ready(function(){
  	$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
