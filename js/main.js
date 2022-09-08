@@ -1,6 +1,9 @@
 // Dialog Box
 $( function() {
     $( "#dialog_greeting" ).dialog();
+	setTimeout(function () {
+    $("#dialog_greeting").dialog("close");
+    }, 5000);
   } );
 
 //Mobile Nav Menu
