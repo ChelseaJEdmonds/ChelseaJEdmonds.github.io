@@ -7,9 +7,10 @@ $( function() {
   } );
 
 //Mobile Nav Menu
- $(document).ready(function(){
- 	$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
- }	);
+$('#nav_menu').slicknav({
+	prependTo:"#mobile_menu",
+	allowParentLinks: true
+});
 
 //Gallery
 //Shows current thumbnail image when page opens
